@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Fetching</title>
+</head>
+<body>
+
+    <form id="myForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"> <br>
+        <br>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName"> <br>
+        <br>
+        <label for="">Enter Date</label>
+        <input type='date' name="" value="" id="date">  <br>
+        <br>
+        <button type="button" onclick="fetchNameAndLastName()">save</button>
+    </form>
+    <br>
+    <button id="sunday">sunday</button>
+    <button id="monday">monday</button>
+    <button id="tuesday">tuesday</button>
+    <button id="wednesday">wenesday</button>
+    <button id="thursday">thursday</button>
+    <button id="friday">friday</button>
+    <button id="saterday">saterday</button>
+    <div id="resultContainer"></div>
+
+
+    <script>
+
+
+        function fetchNameAndLastName() {
+            // Get the value entered in the 'name' input field
+            var name = document.getElementById('name').value;
+
+            // Get the value entered in the 'lastName' input field
+            var lastName = document.getElementById('lastName').value;
+            var date = document.getElementById('date').value;
+            var d= new Date(date);
+            var day = d.getDay();
+
+            var resultContainer = document.getElementById('resultContainer');
+
+              // Add a click event listener to the button
+              sunday.addEventListener('click', function() {
+                  // Your condition here
+                  if (day=='0') {
+                      // Code to execute if the condition is true
+                      resultContainer.innerHTML = '<p>Fetched Name: ' + name + '</p><p>Fetched Last Name: ' + lastName + '</p><p>Fetched date: ' + date + '</p><p>Fetched d: ' + day + '</p>';
+
+                  } else {
+                      // Code to execute if the condition is false
+                      alert('Condition is false!');
+                  }
+              });
+            // Display the fetched name and last name below the form
+                monday.addEventListener('click', function() {
+                    // Your condition here
+                    if (day=='1') {
+                        // Code to execute if the condition is true
+                        resultContainer.innerHTML = '<p>Fetched Name: ' + name + '</p><p>Fetched Last Name: ' + lastName + '</p><p>Fetched date: ' + date + '</p><p>Fetched d: ' + day + '</p>';
+
+                    } else {
+                        // Code to execute if the condition is false
+                        alert('Condition is false!');
+                    }
+                });
+                tuesday.addEventListener('click', function() {
+                    // Your condition here
+                    if (day=='2') {
+                        // Code to execute if the condition is true
+                        resultContainer.innerHTML = '<p>Fetched Name: ' + name + '</p><p>Fetched Last Name: ' + lastName + '</p><p>Fetched date: ' + date + '</p><p>Fetched d: ' + day + '</p>';
+
+                    } else {
+                        // Code to execute if the condition is false
+                        alert('Condition is false!');
+                    }
+                });
+                wednesday.addEventListener('click', function() {
+                    // Your condition here
+                    if (day=='3') {
+                        // Code to execute if the condition is true
+                        resultContainer.innerHTML = '<p>Fetched Name: ' + name + '</p><p>Fetched Last Name: ' + lastName + '</p><p>Fetched date: ' + date + '</p><p>Fetched d: ' + day + '</p>';
+
+                    } else {
+                        // Code to execute if the condition is false
+                        alert('Condition is false!');
+                    }
+                });
+                thursday.addEventListener('click', function() {
+                    // Your condition here
+                    if (day=='4') {
+                        // Code to execute if the condition is true
+                        resultContainer.innerHTML = '<p>Fetched Name: ' + name + '</p><p>Fetched Last Name: ' + lastName + '</p><p>Fetched date: ' + date + '</p><p>Fetched d: ' + day + '</p>';
+
+                    } else {
+                        // Code to execute if the condition is false
+                        alert('Condition is false!');
+                    }
+                });
+                friday.addEventListener('click', function() {
+                    // Your condition here
+                    if (day=='5') {
+                        // Code to execute if the condition is true
+                        resultContainer.innerHTML = '<p>Fetched Name: ' + name + '</p><p>Fetched Last Name: ' + lastName + '</p><p>Fetched date: ' + date + '</p><p>Fetched d: ' + day + '</p>';
+
+                    } else {
+                        // Code to execute if the condition is false
+                        alert('Condition is false!');
+                    }
+                });
+                saterday.addEventListener('click', function() {
+                    // Your condition here
+                    if (day=='6') {
+                        // Code to execute if the condition is true
+                        resultContainer.innerHTML = '<p>Fetched Name: ' + name + '</p><p>Fetched Last Name: ' + lastName + '</p><p>Fetched date: ' + date + '</p><p>Fetched d: ' + day + '</p>';
+
+                    } else {
+                        // Code to execute if the condition is false
+                        alert('Condition is false!');
+                    }
+                });
+
+
+
+
+        }
+    </script>
+
+</body>
+</html>
